@@ -1,0 +1,9 @@
+C:\Users\Chwast\desktop\future\Passenger.Tests\bin\Debug\netstandard2.0\Passenger.Tests.deps.json
+C:\Users\Chwast\desktop\future\Passenger.Tests\bin\Debug\netstandard2.0\Passenger.Tests.dll
+C:\Users\Chwast\desktop\future\Passenger.Tests\bin\Debug\netstandard2.0\Passenger.Tests.pdb
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.csprojAssemblyReference.cache
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.AssemblyInfoInputs.cache
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.AssemblyInfo.cs
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.dll
+C:\Users\Chwast\desktop\future\Passenger.Tests\obj\Debug\netstandard2.0\Passenger.Tests.pdb

@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Passenger.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Passenger.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passenger.Core.dll": {}
+        }
       }
     }
   },
@@ -171,11 +181,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Passenger.Core/1.0.0": {
+      "type": "project",
+      "path": "../Passenger.Core/Passenger.Core.csproj",
+      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Passenger.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -185,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
       "projectName": "Passenger.Infrastructure",
-      "projectPath": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -207,7 +223,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

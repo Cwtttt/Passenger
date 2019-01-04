@@ -4438,6 +4438,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Passenger.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Passenger.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passenger.Core.dll": {}
+        }
+      },
+      "Passenger.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Passenger.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Passenger.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passenger.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -12070,13 +12093,24 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Passenger.Core/1.0.0": {
+      "type": "project",
+      "path": "../Passenger.Core/Passenger.Core.csproj",
+      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
+    },
+    "Passenger.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Passenger.Infrastructure/Passenger.Infrastructure.csproj",
+      "msbuildProject": "../Passenger.Infrastructure/Passenger.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "Passenger.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12086,11 +12120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\Passenger.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\Passenger.Api.csproj",
       "projectName": "Passenger.Api",
-      "projectPath": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\Passenger.Api.csproj",
+      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\Passenger.Api.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\obj\\",
+      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12108,7 +12142,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
