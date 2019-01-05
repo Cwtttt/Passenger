@@ -1,0 +1,12 @@
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\bin\Debug\netstandard2.0\Passenger.Infrastructure.deps.json
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\bin\Debug\netstandard2.0\Passenger.Infrastructure.dll
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\bin\Debug\netstandard2.0\Passenger.Infrastructure.pdb
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\bin\Debug\netstandard2.0\Passenger.Core.dll
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\bin\Debug\netstandard2.0\Passenger.Core.pdb
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.AssemblyInfo.cs
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.csproj.CopyComplete
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.dll
+C:\Users\Chwast\desktop\future\Passenger.Infrastructure\obj\Debug\netstandard2.0\Passenger.Infrastructure.pdb
