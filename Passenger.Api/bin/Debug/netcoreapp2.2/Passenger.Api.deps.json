@@ -234,7 +234,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Passenger.Core/1.0.0": {
+      "passenger.core/1.0.0": {
         "runtime": {
           "Passenger.Core.dll": {}
         },
@@ -244,9 +244,9 @@
       },
       "Passenger.Infrastructure/1.0.0": {
         "dependencies": {
-          "Passenger.Core": "1.0.0",
           "AutoMapper": "8.0.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "12.0.1",
+          "passenger.core": "1.0.0"
         },
         "runtime": {
           "Passenger.Infrastructure.dll": {}
@@ -3333,7 +3333,7 @@
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
-    "Passenger.Core/1.0.0": {
+    "passenger.core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
