@@ -165,14 +165,14 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "Passenger.Core/1.0.0": {
+      "Passenger.core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Passenger.Core.dll": {}
+          "bin/placeholder/Passenger.core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Passenger.Core.dll": {}
+          "bin/placeholder/Passenger.core.dll": {}
         }
       }
     }
@@ -979,16 +979,16 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Passenger.Core/1.0.0": {
+    "Passenger.core/1.0.0": {
       "type": "project",
-      "path": "../Passenger.Core/Passenger.Core.csproj",
-      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
+      "path": "../passenger.core/Passenger.core.csproj",
+      "msbuildProject": "../passenger.core/Passenger.core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Passenger.Core >= 1.0.0",
+      "Passenger.core >= 1.0.0",
       "automapper >= 8.0.0",
       "newtonsoft.json >= 12.0.1"
     ]
@@ -1000,11 +1000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\passenger.infrastructure\\Passenger.Infrastructure.csproj",
       "projectName": "Passenger.Infrastructure",
-      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.infrastructure\\Passenger.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1023,8 +1023,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj": {
-              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj"
+            "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj"
             }
           }
         }

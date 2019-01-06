@@ -21,13 +21,13 @@ namespace Passenger.Api.Controllers
 
         // GET api/values/5
         [HttpGet("{email}")]
-        public UserDto Get(string email)
-            =>_userServices.Get(email);
+        public async Task<UserDto> Get(string email)
+            =>await _userServices.GetAsync(email);
         
         [HttpPost("")]
-        public void Post([FromBody]CreateUser request)
+        public async Task Post([FromBody]CreateUser request)
         {
-            _userServices.Register(request.Email,request.Username, request.Password);
+            await _userServices.RegisterAsync(request.Email,request.Username, request.Password);
         }
 
 

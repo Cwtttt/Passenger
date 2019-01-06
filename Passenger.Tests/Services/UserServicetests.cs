@@ -3,6 +3,8 @@ using Moq;
 using Xunit;
 using Passenger.Core.Repositories;
 using AutoMapper;
+using Passenger.Infrastructure.Servicess;
+using Passenger.Core.Domain;
 
 namespace Passenger.Tests.Services
 {
@@ -16,6 +18,8 @@ namespace Passenger.Tests.Services
 
             var userService = new UserServices(userRepositoryMock.Object, mapperMock.Object);
             await userService.RegisterAsync("user@email.com", "user", "secret");
+
+            userRepositoryMock.Verify(x=>x.AddAsync(It.IsAny<User>()), Times.Once);
         }    
     }
 }

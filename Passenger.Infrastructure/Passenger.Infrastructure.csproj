@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Passenger.Core\Passenger.Core.csproj" />
-    <ProjectReference Include="..\passenger.tests\Passenger.tests.csproj" />
+    <PackageReference Include="automapper" Version="8.0.0" />
+    <PackageReference Include="newtonsoft.json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="automapper" Version="8.0.0" />
-    <PackageReference Include="newtonsoft.json" Version="12.0.1" />
+    <ProjectReference Include="..\passenger.core\passenger.core.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
