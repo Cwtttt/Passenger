@@ -165,14 +165,14 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "Passenger.core/1.0.0": {
+      "passenger.core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Passenger.core.dll": {}
+          "bin/placeholder/passenger.core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Passenger.core.dll": {}
+          "bin/placeholder/passenger.core.dll": {}
         }
       }
     }
@@ -979,18 +979,18 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Passenger.core/1.0.0": {
+    "passenger.core/1.0.0": {
       "type": "project",
-      "path": "../passenger.core/Passenger.core.csproj",
-      "msbuildProject": "../passenger.core/Passenger.core.csproj"
+      "path": "../passenger.core/passenger.core.csproj",
+      "msbuildProject": "../passenger.core/passenger.core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Passenger.core >= 1.0.0",
       "automapper >= 8.0.0",
-      "newtonsoft.json >= 12.0.1"
+      "newtonsoft.json >= 12.0.1",
+      "passenger.core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1023,8 +1023,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj": {
-              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj"
+            "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\passenger.core.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\passenger.core.csproj"
             }
           }
         }

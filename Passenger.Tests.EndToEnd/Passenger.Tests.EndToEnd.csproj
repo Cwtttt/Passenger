@@ -1,16 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="fluentassertions" Version="5.5.3" />
-    <PackageReference Include="microsoft.aspnetcore.testhost" Version="2.2.0" />
-    <PackageReference Include="microsoft.net.test.sdk" Version="15.9.0" />
+    <PackageReference Include="automapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="moq" Version="4.10.1" />
-    <PackageReference Include="newtonsoft.json" Version="12.0.1" />
-    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\passenger.infrastructure\Passenger.Infrastructure.csproj" />
+    <ProjectReference Include="..\passenger.core\Passenger.core.csproj" />
   </ItemGroup>
 
 </Project>

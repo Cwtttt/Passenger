@@ -4452,23 +4452,23 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Passenger.Core/1.0.0": {
+      "passenger.core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Passenger.Core.dll": {}
+          "bin/placeholder/passenger.core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Passenger.Core.dll": {}
+          "bin/placeholder/passenger.core.dll": {}
         }
       },
       "Passenger.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Passenger.Core": "1.0.0",
           "automapper": "8.0.0",
-          "newtonsoft.json": "12.0.1"
+          "newtonsoft.json": "12.0.1",
+          "passenger.core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Passenger.Infrastructure.dll": {}
@@ -12135,10 +12135,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Passenger.Core/1.0.0": {
+    "passenger.core/1.0.0": {
       "type": "project",
-      "path": "../Passenger.Core/Passenger.Core.csproj",
-      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
+      "path": "../passenger.core/passenger.core.csproj",
+      "msbuildProject": "../passenger.core/passenger.core.csproj"
     },
     "Passenger.Infrastructure/1.0.0": {
       "type": "project",
@@ -12162,11 +12162,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\Passenger.Api.csproj",
+      "projectUniqueName": "c:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\Passenger.Api.csproj",
       "projectName": "Passenger.Api",
-      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\Passenger.Api.csproj",
+      "projectPath": "c:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\Passenger.Api.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\obj\\",
+      "outputPath": "c:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12185,8 +12185,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj"
+            "c:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\Chwast\\Desktop\\FUTURE\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj"
             }
           }
         }

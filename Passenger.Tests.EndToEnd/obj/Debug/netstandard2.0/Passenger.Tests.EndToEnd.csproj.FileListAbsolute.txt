@@ -1,9 +1,0 @@
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\bin\Debug\netstandard2.0\Passenger.Tests.EndToEnd.deps.json
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\bin\Debug\netstandard2.0\Passenger.Tests.EndToEnd.dll
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\bin\Debug\netstandard2.0\Passenger.Tests.EndToEnd.pdb
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.csprojAssemblyReference.cache
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.csproj.CoreCompileInputs.cache
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.AssemblyInfoInputs.cache
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.AssemblyInfo.cs
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.dll
-C:\Users\Chwast\desktop\future\Passenger.Tests.EndToEnd\obj\Debug\netstandard2.0\Passenger.Tests.EndToEnd.pdb
