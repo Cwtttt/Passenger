@@ -12,14 +12,13 @@ namespace Passenger.Api.Controllers
 {
     [Route("[controller]")]
 
-    public class UsersController : ControllerBase
+    public class UsersController : ApiControllerBase
     {
         private readonly IUserServices _userServices;
-        private readonly ICommandDispatcher _commandDispatcher;
-        public UsersController(IUserServices userServices, ICommandDispatcher commandDispatcher)
+        public UsersController(IUserServices userServices, 
+                               ICommandDispatcher commandDispatcher) : base(commandDispatcher)
         {
             _userServices = userServices;
-            _commandDispatcher = commandDispatcher;
         }
 
         // GET api/values/5
@@ -40,10 +39,11 @@ namespace Passenger.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]CreateUser command)
         {
-            await _commandDispatcher.DispatchAsync(command);
+            await CommandDispatcher.DispatchAsync(command);
             
             return Created($"users/{command.Email}", new Object());     
         }
+
 
 
     }

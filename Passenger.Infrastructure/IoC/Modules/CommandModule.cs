@@ -13,13 +13,13 @@ namespace Passenger.Infrastructure.IoC.Modules
                 .GetTypeInfo()
                 .Assembly;
                 
-                builder.RegisterAssemblyTypes(assembly)
-                        .AsClosedTypesOf(typeof(ICommandHandler<>))
-                        .InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(assembly)
+                    .AsClosedTypesOf(typeof(ICommandHandler<>))
+                    .InstancePerLifetimeScope();
 
             builder.RegisterType<CommandDispatcher>()
-                .As<ICommandDispatcher>()
-                .InstancePerLifetimeScope();
+                    .As<ICommandDispatcher>()
+                    .InstancePerLifetimeScope();
         }
     }
 }
