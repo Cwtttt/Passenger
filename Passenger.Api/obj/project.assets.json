@@ -4452,23 +4452,23 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "passenger.core/1.0.0": {
+      "Passenger.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/passenger.core.dll": {}
+          "bin/placeholder/Passenger.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/passenger.core.dll": {}
+          "bin/placeholder/Passenger.Core.dll": {}
         }
       },
       "Passenger.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Passenger.Core": "1.0.0",
           "automapper": "8.0.0",
-          "newtonsoft.json": "12.0.1",
-          "passenger.core": "1.0.0"
+          "newtonsoft.json": "12.0.1"
         },
         "compile": {
           "bin/placeholder/Passenger.Infrastructure.dll": {}
@@ -12135,10 +12135,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "passenger.core/1.0.0": {
+    "Passenger.Core/1.0.0": {
       "type": "project",
-      "path": "../passenger.core/passenger.core.csproj",
-      "msbuildProject": "../passenger.core/passenger.core.csproj"
+      "path": "../Passenger.Core/Passenger.Core.csproj",
+      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
     },
     "Passenger.Infrastructure/1.0.0": {
       "type": "project",
@@ -12162,11 +12162,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\Passenger.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\Passenger.Api.csproj",
       "projectName": "Passenger.Api",
-      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\Passenger.Api.csproj",
+      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\Passenger.Api.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.api\\obj\\",
+      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
