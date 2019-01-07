@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "24422b513532f6c200b4d66510c7ae390c9e87b5"
+    "signature": "a8b31e04940e98fafe0677013fb41a45000cd41a"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,13 +9,26 @@
     ".NETStandard,Version=v2.0/": {
       "Passenger.Infrastructure/1.0.0": {
         "dependencies": {
+          "Autofac": "4.8.1",
           "NETStandard.Library": "2.0.3",
+          "Passenger.Core": "1.0.0",
           "AutoMapper": "8.0.0",
-          "Newtonsoft.Json": "12.0.1",
-          "passenger.core": "1.0.0"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "Passenger.Infrastructure.dll": {}
+        }
+      },
+      "Autofac/4.8.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {
+            "assemblyVersion": "4.8.1.0",
+            "fileVersion": "4.8.1.0"
+          }
         }
       },
       "AutoMapper/8.0.0": {
@@ -50,6 +63,17 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.ComponentModel.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
           }
         }
       },
@@ -126,9 +150,9 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "passenger.core/1.0.0": {
+      "Passenger.Core/1.0.0": {
         "runtime": {
-          "passenger.core.dll": {}
+          "Passenger.Core.dll": {}
         }
       }
     }
@@ -138,6 +162,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GYRLxd2wCzhvee2u1vs3AbUbF4CHDWfD7BCNjD3Vxb4wxQz3HC8bPm9Sj9uOT0gE8a6PC2fx1zufmhLgxK+cZg==",
+      "path": "autofac/4.8.1",
+      "hashPath": "autofac.4.8.1.nupkg.sha512"
     },
     "AutoMapper/8.0.0": {
       "type": "package",
@@ -180,6 +211,13 @@
       "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
     },
     "System.IO/4.3.0": {
       "type": "package",
@@ -237,7 +275,7 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "passenger.core/1.0.0": {
+    "Passenger.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

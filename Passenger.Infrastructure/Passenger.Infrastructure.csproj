@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="automapper" Version="8.0.0" />
     <PackageReference Include="newtonsoft.json" Version="12.0.1" />
   </ItemGroup>

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Autofac/4.8.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
       "AutoMapper/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1653,21 +1666,22 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "Passenger.core/1.0.0": {
+      "Passenger.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Passenger.core.dll": {}
+          "bin/placeholder/Passenger.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Passenger.core.dll": {}
+          "bin/placeholder/Passenger.Core.dll": {}
         }
       },
       "Passenger.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Passenger.core": "1.0.0",
+          "Autofac": "4.8.1",
+          "Passenger.Core": "1.0.0",
           "automapper": "8.0.0",
           "newtonsoft.json": "12.0.1"
         },
@@ -1681,6 +1695,21 @@
     }
   },
   "libraries": {
+    "Autofac/4.8.1": {
+      "sha512": "GYRLxd2wCzhvee2u1vs3AbUbF4CHDWfD7BCNjD3Vxb4wxQz3HC8bPm9Sj9uOT0gE8a6PC2fx1zufmhLgxK+cZg==",
+      "type": "package",
+      "path": "autofac/4.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.4.8.1.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
     "AutoMapper/8.0.0": {
       "sha512": "kcbje0Y71XkvzPn8k6OROZGOn2SKaWimon3Bu1WUTVoV5GTJVym+k+zQuKApyyFVRfk7bisumj/qUX4xIIXS+Q==",
       "type": "package",
@@ -5914,23 +5943,23 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Passenger.core/1.0.0": {
+    "Passenger.Core/1.0.0": {
       "type": "project",
-      "path": "../passenger.core/Passenger.core.csproj",
-      "msbuildProject": "../passenger.core/Passenger.core.csproj"
+      "path": "../Passenger.Core/Passenger.Core.csproj",
+      "msbuildProject": "../Passenger.Core/Passenger.Core.csproj"
     },
     "Passenger.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../passenger.infrastructure/Passenger.Infrastructure.csproj",
-      "msbuildProject": "../passenger.infrastructure/Passenger.Infrastructure.csproj"
+      "path": "../Passenger.Infrastructure/Passenger.Infrastructure.csproj",
+      "msbuildProject": "../Passenger.Infrastructure/Passenger.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
+      "Passenger.Core >= 1.0.0",
       "Passenger.Infrastructure >= 1.0.0",
-      "Passenger.core >= 1.0.0",
       "automapper >= 8.0.0",
       "moq >= 4.10.1",
       "xunit >= 2.4.0",
@@ -5944,11 +5973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\passenger.tests2\\passenger.tests2.csproj",
-      "projectName": "passenger.tests2",
-      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.tests2\\passenger.tests2.csproj",
+      "projectUniqueName": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Tests2\\Passenger.Tests2.csproj",
+      "projectName": "Passenger.Tests2",
+      "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Tests2\\Passenger.Tests2.csproj",
       "packagesPath": "C:\\Users\\Chwast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.tests2\\obj\\",
+      "outputPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Tests2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5967,11 +5996,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj": {
-              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.core\\Passenger.core.csproj"
+            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Core\\Passenger.Core.csproj"
             },
-            "C:\\Users\\Chwast\\desktop\\future\\passenger.infrastructure\\Passenger.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\passenger.infrastructure\\Passenger.Infrastructure.csproj"
+            "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Chwast\\desktop\\future\\Passenger.Infrastructure\\Passenger.Infrastructure.csproj"
             }
           }
         }

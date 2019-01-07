@@ -1,23 +1,34 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9d7001cddc74d3c4c56b6ab4c233c0a7de2d972f"
+    "signature": "48eaf22e5f404982661585c7bd603064b18bae20"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "passenger.tests2/1.0.0": {
+      "Passenger.Tests2/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.9.0",
+          "Passenger.Core": "1.0.0",
           "Passenger.Infrastructure": "1.0.0",
-          "Passenger.core": "1.0.0",
           "AutoMapper": "8.0.0",
           "Moq": "4.10.1",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
         "runtime": {
-          "passenger.tests2.dll": {}
+          "Passenger.Tests2.dll": {}
+        }
+      },
+      "Autofac/4.8.1": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {
+            "assemblyVersion": "4.8.1.0",
+            "fileVersion": "4.8.1.0"
+          }
         }
       },
       "AutoMapper/8.0.0": {
@@ -1034,14 +1045,15 @@
           "Microsoft.NET.Test.Sdk": "15.9.0"
         }
       },
-      "Passenger.core/1.0.0": {
+      "Passenger.Core/1.0.0": {
         "runtime": {
-          "Passenger.core.dll": {}
+          "Passenger.Core.dll": {}
         }
       },
       "Passenger.Infrastructure/1.0.0": {
         "dependencies": {
-          "Passenger.core": "1.0.0",
+          "Autofac": "4.8.1",
+          "Passenger.Core": "1.0.0",
           "AutoMapper": "8.0.0",
           "Newtonsoft.Json": "12.0.1"
         },
@@ -1052,10 +1064,17 @@
     }
   },
   "libraries": {
-    "passenger.tests2/1.0.0": {
+    "Passenger.Tests2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GYRLxd2wCzhvee2u1vs3AbUbF4CHDWfD7BCNjD3Vxb4wxQz3HC8bPm9Sj9uOT0gE8a6PC2fx1zufmhLgxK+cZg==",
+      "path": "autofac/4.8.1",
+      "hashPath": "autofac.4.8.1.nupkg.sha512"
     },
     "AutoMapper/8.0.0": {
       "type": "package",
@@ -1603,7 +1622,7 @@
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
     },
-    "Passenger.core/1.0.0": {
+    "Passenger.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
